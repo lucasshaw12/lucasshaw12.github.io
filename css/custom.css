@@ -51,8 +51,9 @@ footer span{
 }
 .jumbotron{
 	text-align: center;
-	background-image: url('../images/oz_boat.png');
+	background-image: url('../images/landing.jpg');
 	color: white;
+	background-size: 103%;
 }
 .jumbotron h1{
 	margin-top:0;
