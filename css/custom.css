@@ -54,17 +54,20 @@ footer span{
 	background-image: url('../images/landing.jpg');
 	color: white;
 	background-size: 103%;
+	background-repeat: no-repeat;
+	box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.5);
 }
 .jumbotron h1{
 	margin-top:0;
 	margin-bottom:50px;
+	font-weight:200;
 }
 .jumbotron img{
 	max-width:100%;
 }
 .jumbotron p{
 	margin-bottom:30px;
-	font-weight:100;
+	font-weight:200;
 	padding: 0 50px;
 }
 .modal-content iframe{
@@ -92,8 +95,7 @@ footer span{
 	margin-top:-334px ;
 }
 .btn-lg{
-	font-size: 36px;
-
+	font-size: 22px;
 }
 .row #allfiled{
 	padding-top:30px;
@@ -109,10 +111,9 @@ footer span{
 	padding-bottom:30px;
 }
 .homepage h2, .homepage h3{
-color: #537F9B;
-font-family: 'Arvo', courier, serif;
-text-transform: uppercase;
-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #537F9B;
+    font-family: 'Arvo', courier, serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .homepage h2{
 	font-size: 30px;
@@ -168,7 +169,9 @@ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 @media (max-width: 767px) { 
-
+    .jumbotron {
+        background-size:600px;
+    }
 	.jumbotron h1 {
 		font-size:24px;
 	}
