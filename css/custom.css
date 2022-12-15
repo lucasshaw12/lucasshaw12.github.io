@@ -1,4 +1,3 @@
-/* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 50px;
 }
@@ -19,11 +18,16 @@ footer span{
 }
 .navbar-brand span{
 	color:white;
-	    font-size: 24px;
+    font-size: 24px;
     letter-spacing: -2px;
 }
 .navbar-brand strong{
 	color: #537F9B;
+}
+#welcome h2{
+    font-size: 70px;
+    color: white;
+    text-shadow: 0 0 7px #537F9B;
 }
 #experience, #education{
 	background-color: #f5f5f5;
@@ -36,8 +40,17 @@ footer span{
 #projects h1, #projects h2, #projects h3{
 	color: #eeeeee;
 }
+h2{
+    text-shadow: 3px 3px #EAECEE;
+}
+#projects h2{
+    text-shadow: 3px 3px #808B96;
+}
 #projects h3{
-    text-decoration: underline;
+    background-color: black;
+    margin: auto;
+    width: 350px;
+    padding: 5px 0;
 }
 #projects a{
     color: #ef4565;
@@ -61,7 +74,7 @@ footer span{
 	background-image: url('../images/landing.jpg');
 	color: white;
 	background-size: 103%;
-	background-position-y: -500px;
+	/*background-position-y: -500px;*/
 	background-repeat: no-repeat;
 	box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.5);
 }
@@ -104,6 +117,10 @@ footer span{
 }
 .btn-lg{
 	font-size: 22px;
+	background-image: -webkit-gradient(linear, right center, left center, from(#337ab7), to(#2C3E50)) ;
+	background-image: -moz-linear-gradient(linear, right center, left center, from(#337ab7), to(#2C3E50)) ;
+	border: none;
+
 }
 .row #allfiled{
 	padding-top:30px;
@@ -128,7 +145,7 @@ footer span{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .homepage h2{
-	font-size: 30px;
+	font-size: 40px;
 }
 .homepage h3{
 	font-size: 26px;
@@ -159,8 +176,15 @@ col-md-12 p{
 .fa-envelope-o:before {
     margin-left: 5px;
 }
+.img-drop-shadow{
+    filter: drop-shadow(2px 2px 2px black);
+}
+.transform-5deg{
+    transform: skewY(5deg)
+}
 
-/* responsive styling */
+
+/* RESPONSIVE STYLING */
 
 @media (max-width: 1199px) { 
 	.jumbotron h1 {
@@ -204,3 +228,4 @@ col-md-12 p{
 		width:80%;
 	}
 }
+
