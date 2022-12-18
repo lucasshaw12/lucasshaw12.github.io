@@ -1,6 +1,23 @@
 body {
   padding-top: 50px;
 }
+.p-padding{
+    padding: 0 20px;
+}
+.full-gradient{
+    background-image: linear-gradient(#222, #094867);
+    color: white;
+}
+.repo-logos{
+    width:40px;
+}
+.img-inline{
+margin-top: 50px;
+    display: flex;
+}
+.img-inline img{
+    margin-right:10px;
+}
 ul.nav, .jumbotron h1{
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -24,33 +41,25 @@ footer span{
 .navbar-brand strong{
 	color: #537F9B;
 }
-#welcome h2{
-    font-size: 70px;
+#welcome h2, #projects h2, #experience h2, #education h2{
+    font-size: 60px;
     color: white;
     text-shadow: 0 0 7px #537F9B;
 }
-#experience, #education{
-	background-color: #f5f5f5;
+#projects h2{
+    color: #FFF;
+    text-shadow: 0 0 3px #000;
 }
 #projects{
-	background-color: #094867;
     opacity: .9;
 	color: white;
-}
-#projects h1, #projects h2, #projects h3{
-	color: #eeeeee;
-}
-h2{
-    text-shadow: 3px 3px #EAECEE;
-}
-#projects h2{
-    text-shadow: 3px 3px #808B96;
 }
 #projects h3{
     background-color: black;
     margin: auto;
     width: 350px;
-    padding: 5px 0;
+    padding: 20px 0;
+    text-align: center;
 }
 #projects a{
     color: #ef4565;
@@ -58,7 +67,7 @@ h2{
 #projects p.bold{
     font-weight: 500;
 }
-#university img{
+#education img{
 	max-width: 250px;
 }
 #back-to-top{
@@ -69,19 +78,34 @@ h2{
 #back-to-top a{
 	color:white;
 }
+.intro-color{
+    color: #537F9B;
+    filter: brightness(185%);
+}
+.underline{
+    text-decoration:underline;
+}
 .jumbotron{
-	text-align: center;
-	background-image: url('../images/landing.jpg');
+	/*text-align: center;*/
+	/*background-image: url('../images/landing.jpg');*/
 	color: white;
 	background-size: 103%;
 	/*background-position-y: -500px;*/
 	background-repeat: no-repeat;
-	box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.5);
+	/*box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.5);*/
+    height: 100vh;
+    background-color: #222;
+    /*padding-top: 32%;*/
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .jumbotron h1{
 	margin-top:0;
 	margin-bottom:50px;
-	font-weight:200;
+	font-weight:500;
+	line-height:inherit;
 }
 .jumbotron img{
 	max-width:100%;
@@ -89,7 +113,10 @@ h2{
 .jumbotron p{
 	margin-bottom:30px;
 	font-weight:200;
-	padding: 0 50px;
+	/*padding: 0 50px;*/
+}
+.jumbotron .container{
+
 }
 .modal-content iframe{
 	margin-top:10px; 
@@ -100,7 +127,7 @@ h2{
 	 width:450px;*/
 }
 .modal-content button.close{
-	    position: absolute;
+    position: absolute;
     top: 5px;
     right: 5px;
     background-color: white;
@@ -117,39 +144,40 @@ h2{
 }
 .btn-lg{
 	font-size: 22px;
-	background-image: -webkit-gradient(linear, right center, left center, from(#337ab7), to(#2C3E50)) ;
-	background-image: -moz-linear-gradient(linear, right center, left center, from(#337ab7), to(#2C3E50)) ;
-	border: none;
+	border: 1px solid #537F9B;
+    transition: transform ease 300ms
 
+}
+.btn-lg:hover{
+    transform: translate(0, -10px);
+    transform: scale(1.1);
+    color: #537F9B;
+}
+a.btn-lg{
+    color: #537F9B;
+    font-weight:400;
+    padding:20px;
+    filter: brightness(185%);
 }
 .row #allfiled{
 	padding-top:30px;
 }
-
 .container h2 {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
-.homepage span{
-    color: #ef4565
-}
-
 .homepage{
-	text-align: center;
+	/*text-align: center;*/
 	padding-top:30px;
 	padding-bottom:30px;
 }
 .homepage h2, .homepage h3{
-    color: #537F9B;
+    color: white;
     font-family: 'Arvo', courier, serif;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-.homepage h2{
-	font-size: 40px;
-}
-.homepage h3{
+/*.homepage h3{
 	font-size: 26px;
-}
+}*/
 .homepage p{
 	font-weight: 300;
 	font-size: 21px;
@@ -172,7 +200,9 @@ h2{
 col-md-12 p{
     text-align: center;
 }
-
+.row-margin-bottom{
+    margin-bottom: 175px;
+}
 .fa-envelope-o:before {
     margin-left: 5px;
 }
