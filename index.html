@@ -83,14 +83,16 @@
                     <!--                    <i class="fa fa-cloud-download"></i>-->
                 </a>
             </p>
-            <div class="col-md-12 img-inline"><a href="https://github.com/lucasshaw12" target="_blank" title="Github repository"><img
-                        src="images/github-mark-white.png" class="img-responsive repo-logos" title="github"
-                ></a>
+            <div class="col-md-12 img-inline"><a href="https://github.com/lucasshaw12" target="_blank"
+                                                 title="Github repository"><img
+                    src="images/github-mark-white.png" class="img-responsive repo-logos" title="github"
+            ></a>
                 <a href="https://hub.docker.com/u/lucasshaw12" title="Docker repository" target="_blank"><img
                         src="images/docker.png" class="img-responsive repo-logos" title="docker"></a>
                 <a href="https://stackoverflow.com/users/12333900/luca" title="Stackoverflow profile"
                    target="_blank"><img
-                        src="images/stackoverflow-tile.svg" class="img-responsive repo-logos" title="stackoverflow"></a></div>
+                        src="images/stackoverflow-tile.svg" class="img-responsive repo-logos" title="stackoverflow"></a>
+            </div>
         </div>
     </div>
     <!-- Modal -->
@@ -116,23 +118,25 @@
             <div class="container homepage">
                 <br>
                 <br>
-                <h2>Welcome<span class="intro-color">.</span></h2>
+                <h2 id="welcometitle">Welcome<span class="intro-color">.</span></h2>
                 <br>
-                <p class="p-padding">I created this portfolio to give myself the opportunity of showcasing my
-                    development passion. From
-                    leaving
-                    my
-                    studies at Sheffield Hallam University, Sheffield, UK, I have been engrossed in the concept of Web
-                    and
-                    Python development.
-                    Following this I began to enrol myself on online courses - spanning from Udemy to ShawAcademy. I'm
-                    also
-                    an avid learner through books, forums and online tutorials.</p>
-                <p class="p-padding"> I am consistently aiming to improve myself, with the dream of becoming Senior
-                    developer and becoming
-                    a
-                    well respected freelance developer within the community.
-                </p>
+                <div class="col-md-12" id="welcomecontent">
+                    <p class="p-padding">I created this portfolio to give myself the opportunity of showcasing my
+                        development passion. From
+                        leaving
+                        my
+                        studies at Sheffield Hallam University, Sheffield, UK, I have been engrossed in the concept of Web
+                        and
+                        Python development.
+                        Following this I began to enrol myself on online courses - spanning from Udemy to ShawAcademy. I'm
+                        also
+                        an avid learner through books, forums and online tutorials.</p>
+                    <p class="p-padding"> I am consistently aiming to improve myself, with the dream of becoming Senior
+                        developer and becoming
+                        a
+                        well respected freelance developer within the community.
+                    </p>
+                </div>
             </div>
             <br>
             <br>
@@ -142,7 +146,7 @@
             <div class="container homepage">
                 <br>
                 <br>
-                <h2>Projects<span class="intro-color">.</span></h2>
+                <h2 id="projectstitle">Projects<span class="intro-color">.</span></h2>
                 <br>
                 <br>
                 <br>
@@ -150,10 +154,10 @@
                 <br>
                 <div class="row row-margin-bottom">
                     <a href="" title="Journal app" target="_blank">
-                        <h3 class="transform-5deg text-center">my Journal.</h3>
+                        <h3 class="transform-5deg text-center" id="myjournaltitle">my Journal.</h3>
                         <br>
                     </a>
-                    <div class="col-sm-5 col-md-6">
+                    <div class="col-sm-5 col-md-6" id="myjournalimg">
                         <img src="images/myjournallogo.png" class="img-drop-shadow center-block" alt="Journal app"
                              title="Journal app"
                              height="100px">
@@ -161,7 +165,7 @@
                              class="img-drop-shadow center-block img-responsive img-thumbnail">
 
                     </div>
-                    <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">
+                    <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0" id="myjournaltext">
                         <p>A fully functional newspaper/journaling application.
                             <br>
                             <br>- Sign up and create your own account
@@ -173,55 +177,50 @@
                             <br>- Allows admin superuser accounts for moderation and housekeeping
                             <br>- Comment on others' entries to grow the conversation
                             <br>
-                            <br>Developed using <span style="color: #ef4565">HTML</span>, <span>CSS</span>,
-                            <span>Bootstrap</span> framwork, <span>Python</span> and <span>Django</span>.
+                            <br>Developed using <span style="color: #ef4565">HTML</span>, <span style="color: #ef4565">CSS</span>,
+                            <span style="color: #ef4565">Bootstrap</span> framwork, <span style="color: #ef4565">Python</span> and <span style="color: #ef4565">Django</span>.
                         </p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" id="sft">
                         <a href="" target="_blank" title="Stock Fund Tracker">
-                            <h3 class="transform-5deg">Stock fund tracker.</h3>
-                            <img src="images/sft.png" alt="Stock Fund Tracker" class="img-drop-shadow img-responsive"
+                            <h3 class="transform-5deg" id="sfttitle">Stock fund tracker.</h3>
+                            <img src="images/sft.png" alt="Stock Fund Tracker" id="sftimg"
+                                 class="img-drop-shadow img-responsive"
                                  title="Stock Fund Tracker" height="500px"></a>
-                        <p class="text-justify p-padding">Track major world stock indices and update prices on demand.
-                            View and
-                            export
-                            charts
-                            for UK
-                            economic markets inc consumer price index (CPI), electricity, gas, and water - export raw
-                            data
-                            to
-                            .xlsx
-                            format. Direct access to all BBC
-                            news RSS feeds - business, technology, politics, education, science and more. Developed
-                            using
-                            <span>Python</span>
-                            and
-                            <span>PyQt5</span>.
-                        </p>
-                        <p class="p-padding">A python PyQt GUI to:
-                            <br>- Track UK stock/fund investments/housing/energy costs/inflation
-                            <br>- Compare personal investments with global indexes/stocks
-                            <br>- Collect news and major economic news outlets
-                        </p>
-                        <p class="p-padding">
-                            - Click the 'Update Application' button (blue colour) then 'run' within the new window to
-                            update
-                            the
-                            economic data provided.
-                            <br>- Displays the current prices for the top 9 major stock indices
-                            <br>- News headlines from the BBC (education, technology, uk, world, health, politics,
-                            science,
-                            business)
-                            <br>- News from Investing.com
-                            <br>- Functionality to export the RSS feeds to the users chosen file location
-                            <br>- Show and/or export line graphs of UK economic data (Housing prices average,
-                            Electricity
-                            prices, Gas prices, Water prices, Consumer price index)
-                            <br>- Export the raw Excel (.xlsx) data for UK economics.
-                            <br>- Live date and time
-                        </p>
+                        <div class="col-md-12" id="sfttext">
+                            <p class="text-justify p-padding">Track major world stock indices and update prices on
+                                demand. View and export charts for UK economic markets inc consumer price index (CPI), electricity, gas, and water - export
+                                raw data to .xlsx format. Direct access to all BBC
+                                news RSS feeds - business, technology, politics, education, science and more. Developed
+                                using
+                                <span style="color: #ef4565">Python</span> and <span style="color: #ef4565">PyQt5</span>.
+                            </p>
+                            <p class="p-padding">A python PyQt GUI to:
+                                <br>- Track UK stock/fund investments/housing/energy costs/inflation
+                                <br>- Compare personal investments with global indexes/stocks
+                                <br>- Collect news and major economic news outlets
+                            </p>
+                            <p class="p-padding">
+                                - Click the 'Update Application' button (blue colour) then 'run' within the new window
+                                to
+                                update
+                                the
+                                economic data provided.
+                                <br>- Displays the current prices for the top 9 major stock indices
+                                <br>- News headlines from the BBC (education, technology, uk, world, health, politics,
+                                science,
+                                business)
+                                <br>- News from Investing.com
+                                <br>- Functionality to export the RSS feeds to the users chosen file location
+                                <br>- Show and/or export line graphs of UK economic data (Housing prices average,
+                                Electricity
+                                prices, Gas prices, Water prices, Consumer price index)
+                                <br>- Export the raw Excel (.xlsx) data for UK economics.
+                                <br>- Live date and time
+                            </p>
+                        </div>
                         <br>
                     </div>
                 </div>
@@ -234,9 +233,9 @@
             <div class="container homepage">
                 <br>
                 <br>
-                <h2>Experience as a pro web developer<span class="intro-color">.</span></h2>
+                <h2 id="experiencetitle">Experience as a pro web developer<span class="intro-color">.</span></h2>
                 <br>
-                <div class="row">
+                <div class="row" id="experiencecontent">
                     <div class="col-md-6">
                         <a href="http://www.moneysavingexpert.com/cheapenergyclub?gclid=CK7gsdbWgNECFVU_Gwodh5kDwQ"><img
                                 src="images/energyclub.jpg" class="img-drop-shadow" alt="Energy Club"
@@ -269,17 +268,15 @@
             <div class="container homepage">
                 <br>
                 <br>
-                <h2>Education<span class="intro-color">.</span></h2>
+                <h2 id="educationtitle">Education<span class="intro-color">.</span></h2>
                 <br>
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" id="educationcontent">
                         <a href="https://www.shu.ac.uk/"
                            title="Sheffield Hallam University" class="img-drop-shadow"
                            target="_blank"><img src="images/university_logo.png"
                                                 title="Sheffield Hallam University">
                         </a>
-
-                        <h3></h3>
                         <p class="p-padding">After studying for 4 years and graduating at Sheffield Hallam University, I
                             learnt how to
                             develop
@@ -307,8 +304,7 @@
     <!--        <br>-->
     <!--    </div>-->
     <footer>
-        <div class="container">
-            <span>Lucas Shaw Development.<strong>Portfolio</strong></span>
+        <div class="container-fluid">
             <div id="back-to-top">
                 <a href="#jumbotron"><i class="fa fa-3x fa-arrow-circle-up"></i>
                 </a>
@@ -325,6 +321,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/smoothscroll.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/customfade.js"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="js/ie10-viewport-bug-workaround.js"></script>
 </body>

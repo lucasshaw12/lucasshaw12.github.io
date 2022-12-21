@@ -1,1 +1,0 @@
-//document.querySelector('.btn-lg').className = 'transition';

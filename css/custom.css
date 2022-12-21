@@ -25,7 +25,7 @@ ul.nav{
 	font-size:13px;
 }
 footer{
-	background-color: #537F9B ; 
+	background-color: #094867 ;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	position: relative;
@@ -54,6 +54,10 @@ footer span{
     opacity: .9;
 	color: white;
 }
+#welcome h3, #projects h3, #experience h3, #education h3{
+    font-size: 36px;
+}
+
 #projects h3{
     background-color: black;
     margin: auto;
